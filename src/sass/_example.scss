@@ -1,0 +1,66 @@
+.input-country{
+    display: block;
+    margin: 40px;
+    border: 1px solid #cccccc; 
+   border-radius: 5px; 
+   -webkit-border-radius: 15px; 
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+   background: #ffffff !important;
+   outline: none; 
+   height: 70px;
+   width: 95%;
+   color: #000; 
+   font-size: 36px; 
+   font-family: Tahoma;
+}
+
+body{
+    height: 100vw;
+    background-color: rgb(218, 218, 218);
+    background-image: linear-gradient(rgb(190, 190, 190), rgb(102, 61, 61));
+    
+}
+
+.country-list{
+    margin-top: 100px;
+    padding-left: 105px;
+}
+
+.country-item{
+    color: rgb(0, 0, 0);
+    margin-top: 8px;
+
+    font-size: 35px;
+}
+
+.name-country{
+    text-align: center;
+    line-height: 60px;
+    font-size: 55px;
+    margin-bottom: 70px;
+}
+
+.conteiner{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body{
+    margin-right: 40px;
+    font-size: 35px;
+}
+
+.languages-country{
+    padding-left: 60px;
+}
+
+.list-lang{
+    font-size: 30px;
+}
+
