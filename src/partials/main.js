@@ -20,17 +20,19 @@ function onInputCountry(evt) {
     let countryName = evt.target.value;
     const countryNameTrim = countryName.trim();
 
-    apiFetchCountries.fetchCountries(countryName)
+    if (countryNameTrim === '') {
+        refs.flagContainer.insertAdjacentHTML= '';
+        return;}
+
+    apiFetchCountries.fetchCountries(countryNameTrim)
     .then(country => {
         if(country.length < 2) {
             cleanInput();
             renderCountry(country);
-            refs.input.value = '';
             
         } else if(country.length > 1 && country.length <= 10) {
             cleanInput();
             renderCountries(country);
-            refs.input.value = '';
             
         } else if(country.length > 10) {
             cleanInput();
